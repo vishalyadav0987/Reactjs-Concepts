@@ -4,7 +4,8 @@ import React from 'react'
 // import UseStateArray from '../src/tutorial/1-useState/setup/3-useState-array'
 // import UseStateObject from '../src/tutorial/1-useState/setup/4-useState-object'
 // import UseStateCounter from '../src/tutorial/1-useState/setup/5-useState-counter'
-import UseEffectBasics from '../src/tutorial/2-useEffect/setup/1-useEffect-basics'
+// import UseEffectBasics from '../src/tutorial/2-useEffect/setup/1-useEffect-basics'
+import UseEffectCleanUp from '../src/tutorial/2-useEffect/setup/2-useEffect-cleanup'
 function App() {
   return (
     <div className='container'>
@@ -14,7 +15,8 @@ function App() {
       {/* <UseStateArray/> */}
       {/* <UseStateObject/> */}
       {/* <UseStateCounter/> */}
-      <UseEffectBasics/>
+      {/* <UseEffectBasics/> */}
+      <UseEffectCleanUp />
     </div>
   )
 }
