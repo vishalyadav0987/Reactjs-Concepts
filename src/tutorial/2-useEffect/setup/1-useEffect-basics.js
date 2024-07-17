@@ -18,7 +18,7 @@ const UseEffectBasics = () => {
     if (value > 1) {
       document.title = `New Message - (${value})`
     }
-  });
+  }, [value]); // if component only render then value change
   console.log('render component');
   return (
     <>
