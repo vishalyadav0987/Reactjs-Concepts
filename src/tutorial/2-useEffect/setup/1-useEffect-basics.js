@@ -4,7 +4,19 @@ import React, { useState, useEffect } from 'react';
 // second parameter
 // useEffect - work outside the component(fetching data)
 const UseEffectBasics = () => {
-  return <h2>useEffect Basics</h2>;
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    console.log('Call UseEffect');
+    document.title = `New Message - (${value})`
+  });
+  console.log('render component');
+  return (
+    <>
+      <h1>{value}</h1>
+      <button className='btn' onClick={() => setValue(value + 1)}>Change</button>
+      {/* if i press the bvutton it will re render component because evey time useEffect will call in every click on button. */}
+    </>
+  )
 };
 
 export default UseEffectBasics;
