@@ -5,9 +5,19 @@ import React, { useState, useEffect } from 'react';
 // useEffect - work outside the component(fetching data)
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
+  // if(value > 0){
+  //   useEffect(() => {
+  //     console.log('Call UseEffect');
+  //     document.title = `New Message - (${value})`
+  //   });
+  // } hook canot call conditionally
+
+  // but
   useEffect(() => {
     console.log('Call UseEffect');
-    document.title = `New Message - (${value})`
+    if (value > 1) {
+      document.title = `New Message - (${value})`
+    }
   });
   console.log('render component');
   return (
