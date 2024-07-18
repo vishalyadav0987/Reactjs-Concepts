@@ -5,7 +5,8 @@ import React from 'react'
 // import UseStateObject from '../src/tutorial/1-useState/setup/4-useState-object'
 // import UseStateCounter from '../src/tutorial/1-useState/setup/5-useState-counter'
 // import UseEffectBasics from '../src/tutorial/2-useEffect/setup/1-useEffect-basics'
-import UseEffectCleanUp from '../src/tutorial/2-useEffect/setup/2-useEffect-cleanup'
+// import UseEffectCleanUp from '../src/tutorial/2-useEffect/setup/2-useEffect-cleanup'
+import UseEffectFetchData from '../src/tutorial/2-useEffect/setup/3-useEffect-fetch-data'
 function App() {
   return (
     <div className='container'>
@@ -16,7 +17,8 @@ function App() {
       {/* <UseStateObject/> */}
       {/* <UseStateCounter/> */}
       {/* <UseEffectBasics/> */}
-      <UseEffectCleanUp />
+      {/* <UseEffectCleanUp /> */}
+      <UseEffectFetchData />
     </div>
   )
 }
